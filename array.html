@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeJava.com</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel = "icon" href = "capture.jpg" type = "image/x-icon">
+	<link href="index.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="head">
+		<h1>CodeJava.com</h1>
+		<p>A site for Java programs</p>
+	</div>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<form class="form-inline"  action="/action_page.php" id="search">
+			<input type="search" class="form-control" name="search" placeholder="search">
+			<button type="submit" class="btn btn-primary " id="button">Search</button>
+		</form>
+	</nav>
+	<div class="row">
+		<div class="col-sm">
+			<h5> Write Java code statements that accomplish the tasks listed below.<br>
+a) Declare an array of integers.<br>
+b) Allocate storage to allow 5 integers to be stored in the array.<br>
+c) Populate the array with the values: 1, 8, 27, 64, 125<br>
+d) Replace the third array element with the value -7.<br>
+e) Copy the value of the fifth array element to the first array storage location.<br>
+f) Subtract the value stored in the second array storage location from the value stored in the
+third and store the difference in the fourth array storage location.<br>
+g) Compute the sum of the array elements with subscripts 1 to 3.</h5>
+			<br>
+			<h2>Code</h2>
+			<div id="code">
+				<code>
+					import java.util.Scanner;<br>
+					class array<br>
+					{<br>
+						public static void main(String[] a)<br>
+						{<br>
+							int[] array=new int[5];<br>
+							int s=0;<br>
+							array[0]=1;<br>
+							array[1]=8;<br>
+							array[2]=27;<br>
+							array[3]=64;<br>
+							array[4]=125;<br>
+							System.out.println("The initial array numbers are");<br>
+							for(int i=0;i<5;i++)<br>
+							{<br>
+								System.out.print(array[i]+" ");<br>
+							}<br>
+							System.out.println();<br>
+							System.out.println("The array numbers after replacing third one with -7 are");<br>
+							array[2]=-7;<br>
+							for(int i=0;i<5;i++)<br>
+							{<br>
+								System.out.print(array[i]+" ");<br>
+							}<br>
+							System.out.println();<br>
+							System.out.println("The  array numbers after copying fifth element to first element are");<br>
+							array[0]=array[4];<br>
+							for(int i=0;i<5;i++)<br>
+							{<br>
+								System.out.print(array[i]+" ");<br>
+							}<br>
+							System.out.println();<br>
+							System.out.println("The array numbers after subtracting second from third and storing in fourth are");<br>
+							array[4]=array[3]-array[2];<br>
+							for(int i=0;i<5;i++)<br>
+							{<br>
+								System.out.print(array[i]+" ");<br>
+							}<br>
+							System.out.println();<br>
+							for(int i=1;i<4;i++)<br>
+							{<br>
+								s=s+array[i];<br>
+							}<br>
+							System.out.println("The sum of elemts in array with subscripts from 1 to 3 is");<br>
+							System.out.println(s);<br>
+						}<br>
+						
+					}<br>
+				</code>
+			</div>
+			<h2>Output</h2>
+			<br>
+			<p id="code">The initial array numbers are<br>
+1 8 27 64 125<br>
+The array numbers after replacing third one with -7 are<br>
+1 8 -7 64 125<br>
+The  array numbers after copying fifth element to first element are<br>
+125 8 -7 64 125<br>
+The array numbers after subtracting second from third and storing in fourth are<br>
+125 8 -7 64 71<br>
+The sum of elemts in array with subscripts from 1 to 3 is<br>
+65
+</p>
+		</div>
+	</div>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="footer">
+		<p>CodeJava.com</p>
+		<p>Made with <img src="lovelogo.png" height="25" width="25"> for programmers</p>
+		<p>Contact me at lalithpunepalli@gmail.com</p>
+		<p>Follow me @</p>
+		<a href="https://www.instagram.com/iamlalith_reddy/" target="-blank"><img src="instagram logo.jpg" height="50" width="50" class="e"></a>
+		<a href="https://linkedin.com/in/lalith-reddy-605480167" target="-blank"><img src="linkedinlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://twitter.com/iamlalithreddy" target="-blank"><img src="twitterlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://www.facebook.com/nanipunepalli" target="-blank"><img src="facebooklogo.png" height="50" width="50" class="e"></a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeJava.com</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel = "icon" href = "capture.jpg" type = "image/x-icon">
+	<link href="index.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="head">
+		<h1>CodeJava.com</h1>
+		<p>A site for Java programs</p>
+	</div>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<form class="form-inline"  action="/action_page.php" id="search">
+			<input type="search" class="form-control" name="search" placeholder="search">
+			<button type="submit" class="btn btn-primary " id="button">Search</button>
+		</form>
+	</nav>
+	<div class="row">
+		<div class="col-sm">
+			<h5>Write a program called CozaLozaWoza which prints the numbers 1 to 110, 11 numbers per
+line. The program shall print "Coza" in place of the numbers which are multiples of 3, "Loza"
+for multiples of 5, "Woza" for multiples of 7, "CozaLoza" for multiples of 3 and 5, and so on.<br>
+The output shall look like: <br>
+1 2 Coza 4 Loza Coza Woza 8 Coza Loza 11<br>
+Coza 13 Woza CozaLoza 16 17 Coza 19 Loza CozaWoza 22<br>
+23 Coza Loza 26 Coza Woza 29 CozaLoza 31 32 Coza </a></h5>
+			<br>
+			<h2>Code</h2>
+			<div id="code">
+				<code>
+					import java.util.Scanner;<br>
+					class CozaLozaWoza<br>
+					{<br>
+						public static void main(String[] a)<br>
+						{<br>
+							for(int i=1;i<111;i++)<br>
+							{<br>
+								if(i%3==0)<br>
+								{<br>
+									System.out.print("Coza"+" ");<br>
+								}<br>
+								else if(i%5==0)<br>
+								{<br>
+									System.out.print("Loza"+" ");<br>
+								}<br>
+								else if(i%7==0)<br>
+								{<br>
+									System.out.print("Woza"+" ");<br>
+								}<br>
+								else if(i%3==0 && i%5==0)<br>
+								{<br>
+									System.out.print("CozaWoza"+" ");<br>
+								}<br>
+								else<br>
+								{<br>
+									System.out.print(i+" ");<br>
+								}<br>
+								if(i%11==0)<br>
+								{<br>
+									System.out.println();<br>
+								}<br>
+							}<br>
+						}<br>
+					}
+				</code>
+			</div>
+			<h2>Output</h2>
+			<br>
+			<p id="code">1 2 Coza 4 Loza Coza Woza 8 Coza Loza 11<br>
+Coza 13 Woza Coza 16 17 Coza 19 Loza Coza 22<br>
+23 Coza Loza 26 Coza Woza 29 Coza 31 32 Coza<br>
+34 Loza Coza 37 38 Coza Loza 41 Coza 43 44<br>
+Coza 46 47 Coza Woza Loza Coza 52 53 Coza Loza<br>
+Woza Coza 58 59 Coza 61 62 Coza 64 Loza Coza<br>
+67 68 Coza Loza 71 Coza 73 74 Coza 76 Woza<br>
+Coza 79 Loza Coza 82 83 Coza Loza 86 Coza 88<br>
+89 Coza Woza 92 Coza 94 Loza Coza 97 Woza Coza<br>
+Loza 101 Coza 103 104 Coza 106 107 Coza 109 Loza</p><br>
+		</div>
+	</div>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="footer">
+		<p>CodeJava.com</p>
+		<p>Made with <img src="lovelogo.png" height="25" width="25"> for programmers</p>
+		<p>Contact me at lalithpunepalli@gmail.com</p>
+		<p>Follow me @</p>
+		<a href="https://www.instagram.com/iamlalith_reddy/" target="-blank"><img src="instagram logo.jpg" height="50" width="50" class="e"></a>
+		<a href="https://linkedin.com/in/lalith-reddy-605480167" target="-blank"><img src="linkedinlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://twitter.com/iamlalithreddy" target="-blank"><img src="twitterlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://www.facebook.com/nanipunepalli" target="-blank"><img src="facebooklogo.png" height="50" width="50" class="e"></a>
+	</div>
+</body>
+</html>

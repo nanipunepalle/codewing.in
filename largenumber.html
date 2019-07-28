@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeJava.com</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel = "icon" href = "capture.jpg" type = "image/x-icon">
+	<link href="index.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="head">
+		<h1>CodeJava.com</h1>
+		<p>A site for Java programs</p>
+	</div>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<form class="form-inline"  action="/action_page.php" id="search">
+			<input type="search" class="form-control" name="search" placeholder="search">
+			<button type="submit" class="btn btn-primary " id="button">Search</button>
+		</form>
+	</nav>
+	<div class="row">
+		<div class="col-sm">
+			<h4>Write a Java code to get two numbers and find the max among them.</h4>
+			<br>
+			<h2>Code</h2>
+			<div id="code">
+				<code>
+					import java.util.Scanner;<br>
+public class thirdprg<br>
+{<br>
+public static void main(String[] a)<br>
+{<br>
+Scanner inp=new Scanner(System.in);<br>
+int num1,num2,num3;<br>
+System.out.println("Enter any two numbers");<br>
+num1=Integer.parseInt(inp.next());<br>
+num2=Integer.parseInt(inp.next());<br>
+if(num1>num2)<br>
+{<br>
+System.out.println("The large nunumber is "+num1);<br>
+}<br>
+else if(num1==num2)<br>
+{<br>
+System.out.println("Both are equal");<br>
+}<br>
+else<br>
+{<br>
+System.out.println("The large number is "+num2);<br>
+}<br>
+}<br>
+}<br>
+				</code>
+			</div>
+			<h2>Output</h2>
+			<br>
+			<p id="code">Enter any two numbers:<br>
+				23<br>
+				45<br>
+				The large number is 45<br>
+			</p>
+		</div>
+	</div>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="footer">
+		<p>CodeJava.com</p>
+		<p>Made with <img src="lovelogo.png" height="25" width="25"> for programmers</p>
+		<p>Contact me at lalithpunepalli@gmail.com</p>
+		<p>Follow me @</p>
+		<a href="https://www.instagram.com/iamlalith_reddy/" target="-blank"><img src="instagram logo.jpg" height="50" width="50" class="e"></a>
+		<a href="https://linkedin.com/in/lalith-reddy-605480167" target="-blank"><img src="linkedinlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://twitter.com/iamlalithreddy" target="-blank"><img src="twitterlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://www.facebook.com/nanipunepalli" target="-blank"><img src="facebooklogo.png" height="50" width="50" class="e"></a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeJava.com</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel = "icon" href = "capture.jpg" type = "image/x-icon">
+	<link href="index.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="head">
+		<h1>CodeJava.com</h1>
+		<p>A site for Java programs</p>
+	</div>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<form class="form-inline"  action="/action_page.php" id="search">
+			<input type="search" class="form-control" name="search" placeholder="search">
+			<button type="submit" class="btn btn-primary " id="button">Search</button>
+		</form>
+	</nav>
+	<div class="row">
+		<div class="col-sm">
+			<h3>Write a Java program that will read in month and day (as numerical value). The program will return the equivalent zodiac sign. <br>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Zodiac Sign</th>
+							<th>Duration</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Aquarius</td>
+							<td>Jan 20 – Feb 18</td>
+						</tr>
+						<tr>
+							<td>Pisces</td>
+							<td>Jan 20 – Feb 18</td>
+						</tr>
+						<tr>
+							<td>Aries </td>
+							<td>Jan 20 – Feb 18</td>
+						</tr>
+						<tr>
+							<td>Taurus </td>
+							<td>Jan 20 – Feb 18</td>
+						</tr>
+						<tr>
+							<td>Gemini</td>
+							<td>Jan 20 – Feb 18</td>
+						</tr>
+						<tr>
+							<td>Cancer </td>
+							<td>Jan 20 – Feb 18</td>
+						</tr>
+						<tr>
+							<td>Leo</td>
+							<td>Jan 20 – Feb 18</td>
+						</tr>
+						<tr>
+							<td>Virgo </td>
+							<td>Jan 20 – Feb 18</td>
+						</tr>
+						<tr>
+							<td>Libra</td>
+							<td>Jan 20 – Feb 18</td>
+						</tr>
+						<tr>
+							<td>Scorpio </td>
+							<td>Jan 20 – Feb 18</td>
+						</tr>
+						<tr>
+							<td>Sagittarius</td>
+							<td>Jan 20 – Feb 18</td>
+						</tr>
+						<tr>
+							<td>Capricorn</td>
+							<td>Jan 20 – Feb 18</td>
+						</tr>
+					</tbody>
+				</table></h3>
+			<br>
+			<h2>Code</h2>
+			<div id="code">
+				<code>
+					import java .util.Scanner;<br>
+					class zodiac<br>
+					{<br>
+						public static void main(String[] a)<br>
+						{<br>
+							Scanner inp=new Scanner(System.in);<br>
+							System.out.println("Enter month:");<br>
+							int m=inp.nextInt();<br>
+							System.out.println("Enter Day:");<br>
+							int d=inp.nextInt();<br>
+							String[] z={"Aquarius","Pisces","Aries","Taurus","Gemini","Cancer","Leo","Virgo","Libra","Scorpio","Sagittarius","Capricorn"};<br>
+							if((m==1 && d>=20)||(m==2 && d<=18))<br>
+							System.out.println(z[0]);<br>
+							if((m==2 && d>=19)||(m==3 && d<=20))<br>
+							System.out.println(z[1]);<br>
+							if((m==3 && d>=21)||(m==4 && d<=19))<br>
+							System.out.println(z[2]);<br>
+							if((m==4 && d>=20)||(m==5 && d<=20))<br>
+							System.out.println(z[3]);<br>
+							if((m==5 && d>=21)||(m==6 && d<=20))<br>
+							System.out.println(z[4]);<br>
+							if((m==6 && d>=21)||(m==7 && d<=22))<br>
+							System.out.println(z[5]);<br>
+							if((m==7 && d>=23)||(m==8 && d<=22))<br>
+							System.out.println(z[6]);<br>
+							if((m==8 && d>=23)||(m==9 && d<=22))<br>
+							System.out.println(z[7]);<br>
+							if((m==9 && d>=23)||(m==10 && d<=22))<br>
+							System.out.println(z[8]);<br>
+							if((m==10 && d>=23)||(m==11 && d<=21))<br>
+							System.out.println(z[9]);<br>
+							if((m==11 && d>=22)||(m==12 && d<=21))<br>
+							System.out.println(z[10]);<br>
+							if((m==12 && d>=22)||(m==1 && d<=19))<br>
+							System.out.println(z[11]);<br>
+						}<br>
+					}
+				</code>
+			</div>
+			<h2>Output</h2>
+			<br>
+			<p id="code">
+				Enter month:5<br>
+				Enter Day:23<br>
+				Gemini<br>
+			</p>
+		</div>
+	</div>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="footer">
+		<p>CodeJava.com</p>
+		<p>Made with <img src="lovelogo.png" height="25" width="25"> for programmers</p>
+		<p>Contact me at lalithpunepalli@gmail.com</p>
+		<p>Follow me @</p>
+		<a href="https://www.instagram.com/iamlalith_reddy/" target="-blank"><img src="instagram logo.jpg" height="50" width="50" class="e"></a>
+		<a href="https://linkedin.com/in/lalith-reddy-605480167" target="-blank"><img src="linkedinlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://twitter.com/iamlalithreddy" target="-blank"><img src="twitterlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://www.facebook.com/nanipunepalli" target="-blank"><img src="facebooklogo.png" height="50" width="50" class="e"></a>
+	</div>
+</body>
+</html>
