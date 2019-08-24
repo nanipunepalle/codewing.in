@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeWing.in</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel = "icon" href = "capture.jpg" type = "image/x-icon">
+	<link href="index.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="head">
+		<h1>CodeWing.in</h1>
+		<p>A site for Java programs</p>
+	</div>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<form class="form-inline"  action="/action_page.php" id="search">
+			<input type="search" class="form-control" name="search" placeholder="search">
+			<button type="submit" class="btn btn-primary " id="button">Search</button>
+		</form>
+	</nav>
+	<div class="row">
+		<div class="col-9">
+			<h1 >Prime Number</h1>
+			<br>
+			<h2>Code</h2>
+			<div id="code" style="padding-left: 20px">
+				<code>
+					import java.util.*;<br>
+class Prime<br>
+{<br>
+public static void main(String[] a)<br>
+{<br>
+Scanner inp=new Scanner(System.in);<br>
+System.out.println("Enter the number");<br>
+int n=inp.nextInt();<br>
+int f=0;<br>
+if(n==0||n==1)<br>
+{  <br>
+System.out.println(n+" is not prime number");  <br>    
+}<br>
+else<br>
+{  <br>
+for(int i=2;i<=n/2;i++)<br>
+{      <br>
+if(n%i==0)<br>
+{      <br>
+System.out.println(n+" is not prime number");   <br>   
+f=1;      <br>
+break;      <br>
+}      <br>
+}      <br>
+if(f==0)  <br>
+{<br>
+System.out.println(n+" is prime number"); <br>
+}  <br>
+}<br>
+}    <br>
+}<br>
+				</code>
+			</div>
+			<h2>Output</h2>
+			<br>
+			<p id="code">Enter the number<br>
+11<br>
+11 is prime number</p>
+		</div>
+	</div>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="footer">
+		<p>CodeWing.in</p>
+		<p>Made with <img src="lovelogo.png" height="25" width="25"> for programmers</p>
+		<p>Contact me at lalithpunepalli@gmail.com</p>
+		<p>Follow me @</p>
+		<a href="https://www.instagram.com/iamlalith_reddy/" target="-blank"><img src="instagram logo.jpg" height="50" width="50" class="e"></a>
+		<a href="https://linkedin.com/in/lalith-reddy-605480167" target="-blank"><img src="linkedinlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://twitter.com/iamlalithreddy" target="-blank"><img src="twitterlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://www.facebook.com/nanipunepalli" target="-blank"><img src="facebooklogo.png" height="50" width="50" class="e"></a>
+	</div>
+</body>
+</html>
