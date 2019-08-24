@@ -31,7 +31,7 @@
 		<p>A site for Java programs</p>
 	</div>
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-		<form class="form-inline"  id="myInput" onkeyup="myFunction()">
+		<form class="form-inline"  id="myInput" onkeyup="myFunction()" id="frmSearch">
 			<input type="search" class="form-control" name="search" placeholder="search" id="txtSearch">
 			<button type="submit" class="btn btn-primary " id="button" onclick="myFunction()">Search</button>
 		</form>
@@ -208,12 +208,13 @@ b. The program should display all of the names that match the user’s input and
 		<a href="https://twitter.com/iamlalithreddy" target="-blank"><img src="twitterlogo.png" height="50" width="50" class="e"></a>
 		<a href="https://www.facebook.com/nanipunepalli" target="-blank"><img src="facebooklogo.png" height="50" width="50" class="e"></a>
 	</div>
+	<!--
 <script>
 	function myFunction() 
 	{
 		alert("The search option will be included soon.You can find the program easily as there are limited number of programs.The option will be included as programs increase.");
 	}
-</script>
+</script>-->
 <!--
 <script>
 function myFunction() {
@@ -233,5 +234,12 @@ function myFunction() {
     }
 }
 </script>-->
+<script type="text/javascript">
+    document.getElementById('frmSearch').onsubmit = function() {
+        window.location = 'http://www.google.com/search?q=site:codewing.in' + document.getElementById('txtSearch').value;
+        return false;
+    }
+</script>
+
 </body>
 </html>
