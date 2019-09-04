@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeWing.in</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel = "icon" href = "capture.jpg" type = "image/x-icon">
+	<link href="index.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="head">
+		<h1>CodeWing.in</h1>
+		<p>A site for Java programs</p>
+	</div>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<form class="form-inline"  action="/action_page.php" id="search">
+			<input type="search" class="form-control" name="search" placeholder="search">
+			<button type="submit" class="btn btn-primary " id="button">Search</button>
+		</form>
+	</nav>
+	<div class="row">
+		<div class="col-sm">
+			<h5> Write a Java program to implement the following. <br>    
+			a. Create class Person with attributes name, age and gender. <br> 
+		b. Create class Student with attribute mark1, mark2, mark3 and average. <br> 
+		 c. Create class Teacher with attribute salary. <br> 
+		  d. Class Student and Teacher must inherit from Person. <br> 
+		   e. Develop method for setter, findAverage and getter. <br> 
+		    f. In main class, create and print two students and one teacher</h5>
+			<br>
+			<h2>Code</h2>
+			<div id="code" style="padding-left: 20px">
+				<code>
+					import java.util.*;<br>
+class Person<br>
+{<br>
+String name,gender;<br>
+int age;<br>
+}<br>
+class Student extends Person<br>
+{<br>
+float mark1,mark2,mark3,avg;<br>
+public void set(String n,String g,int a,float m1,float m2,float m3)<br>
+{<br>
+name=n;<br>
+gender=g;<br>
+age=a;<br>
+mark1=(float)m1;<br>
+mark2=(float)m2;<br>
+mark3=(float)m3;<br>
+}<br>
+public void get()<br>
+{<br>
+avg=(mark1+mark2+mark3)/3;<br>
+System.out.println(name+"\n"+gender+"\n"+age+"\n"+avg);<br>
+}<br>
+}<br>
+class Teacher extends Person<br>
+{<br>
+float salary;<br>
+public void set(String n,String g,int a,float sal)<br>
+{<br>
+name=n;<br>
+gender=g;<br>
+age=a;<br>
+salary=sal;<br>
+}<br>
+public void get()<br>
+{<br>
+System.out.println(name+"\n"+gender+"\n"+age+"\n"+salary);<br>
+}<br>
+}<br>
+public class test1<br>
+{<br>
+public static void main(String[] args)<br>
+{<br>
+Student o1=new Student();<br>
+Student o2=new Student();<br>
+Teacher o3=new Teacher();<br>
+o1.set("Lalith","Male",18,90,95,80);<br>
+o2.set("Shradda kapoor","Female",26,100,70,80);<br>
+o3.set("Prabhas","Male",30,100000);<br>
+System.out.println("Details of first student");<br>
+System.out.println();<br>
+o1.get();<br>
+System.out.println();<br>
+System.out.println("Details of second student");<br>
+System.out.println();<br>
+o2.get();<br>
+System.out.println();<br>
+System.out.println("Details of Teacher");<br>
+System.out.println();<br>
+o3.get();<br>
+}<br>
+}
+				</code>
+			</div>
+			<h2>Output</h2>
+			<br>
+			<p id="code">Details of first student<br>
+
+Lalith<br>
+Male<br>
+18<br>
+88.333336<br>
+
+Details of second student<br>
+
+Shradda kapoor<br>
+Female<br>
+26<br>
+83.333336<br>
+
+Details of Teacher<br>
+
+Prabhas<br>
+Male<br>
+30<br>
+100000.0</p>
+		</div>
+	</div>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="footer">
+		<p>CodeWing.in</p>
+		<p>Made with <img src="lovelogo.png" height="25" width="25"> for programmers</p>
+		<p>Contact me at lalithpunepalli@gmail.com</p>
+		<p>Follow me @</p>
+		<a href="https://www.instagram.com/iamlalith_reddy/" target="-blank"><img src="instagram logo.jpg" height="50" width="50" class="e"></a>
+		<a href="https://linkedin.com/in/lalith-reddy-605480167" target="-blank"><img src="linkedinlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://twitter.com/iamlalithreddy" target="-blank"><img src="twitterlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://www.facebook.com/nanipunepalli" target="-blank"><img src="facebooklogo.png" height="50" width="50" class="e"></a>
+	</div>
+</body>
+</html>
