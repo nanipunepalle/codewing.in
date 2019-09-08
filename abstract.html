@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeWing.in</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel = "icon" href = "capture.jpg" type = "image/x-icon">
+	<link href="index.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="head">
+		<h1>CodeWing.in</h1>
+		<p>A site for Java programs</p>
+	</div>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<form class="form-inline"  action="/action_page.php" id="search">
+			<input type="search" class="form-control" name="search" placeholder="search">
+			<button type="submit" class="btn btn-primary " id="button">Search</button>
+		</form>
+	</nav>
+	<div class="row">
+		<div class="col-sm">
+			<h5>Write an abstract class with an abstract method double Process (double P, double R).
+Create a subclass Discount and implement the Process() method with the following
+formula: net=P-P*R/100. Return the net value. Create another subclass Tax and
+implement the Process() method with the following formula: total=P+P*R/100. Return the
+total. Create necessary objects and give the required input and shows the output.</h5>
+			<br>
+			<h2>Code</h2>
+			<div id="code" style="padding-left: 20px">
+				<code>
+					import java.util.*;<br>
+abstract class Net<br>
+{<br>
+double p;<br>
+double r;<br>
+abstract void Process(double P,double R);<br>
+}<br>
+class Discount extends Net<br>
+{<br>
+public void Process(double a,double b)<br>
+{<br>
+p=a;<br>
+r=b;<br>
+}<br>
+public double getdata()<br>
+{<br>
+double net=p-p*r/100;<br>
+return net;<br>
+}<br>
+}<br>
+class Tax extends Discount<br>
+{<br>
+public double getdata()<br>
+{<br>
+double total=p+p*r/100;<br>
+return total;<br>
+}<br>
+}<br>
+public class abstractdemo<br>
+{<br>
+public static void main(String[] args)<br>
+{<br>
+Discount o1=new Discount();<br>
+Tax o2=new Tax();<br>
+o1.Process(5,6);<br>
+o2.Process(5,6);<br>
+System.out.println("Net="+o1.getdata());<br>
+System.out.println("Total="+o2.getdata());<br>
+}<br>
+}
+				</code>
+			</div>
+			<h2>Output</h2>
+			<br>
+			<p id="code">Net=4.7<br>
+Total=5.3</p>
+		</div>
+	</div>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="footer">
+		<p>CodeWing.in</p>
+		<p>Made with <img src="lovelogo.png" height="25" width="25"> for programmers</p>
+		<p>Contact me at lalithpunepalli@gmail.com</p>
+		<p>Follow me @</p>
+		<a href="https://www.instagram.com/iamlalith_reddy/" target="-blank"><img src="instagram logo.jpg" height="50" width="50" class="e"></a>
+		<a href="https://linkedin.com/in/lalith-reddy-605480167" target="-blank"><img src="linkedinlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://twitter.com/iamlalithreddy" target="-blank"><img src="twitterlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://www.facebook.com/nanipunepalli" target="-blank"><img src="facebooklogo.png" height="50" width="50" class="e"></a>
+	</div>
+</body>
+</html>
