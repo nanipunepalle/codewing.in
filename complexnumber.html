@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeWing.in</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel = "icon" href = "capture.jpg" type = "image/x-icon">
+	<link href="index.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="head">
+		<h1>CodeWing.in</h1>
+		<p>A site for Java programs</p>
+	</div>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<form class="form-inline"  action="/action_page.php" id="search">
+			<input type="search" class="form-control" name="search" placeholder="search">
+			<button type="submit" class="btn btn-primary " id="button">Search</button>
+		</form>
+	</nav>
+	<div class="row">
+		<div class="col-sm">
+			<h5>Write a program to calculate the grade of a student. Enter marks for minimum 5 subjects.
+While entering marks if the mark is negative throw NegativeMarkException and if the
+mark is greater than 100 throw OutofRangeException.</h5>
+			<br>
+			<h2>Code</h2>
+			<div id="code" style="padding-left: 20px">
+				<code>
+					import java.util.*;<br>
+class Complex<br>
+{<br>
+int a,b;<br>
+public Complex()<br>
+{<br>
+a=0;<br>
+b=0;<br>
+}<br>
+public Complex(int x,int y)<br>
+{<br>
+a=x;<br>
+b=y;<br>
+}<br>
+public void display()<br>
+{<br>
+if(b>=0)<br>
+System.out.println("The number is:"+a+"+"+b+"i");<br>
+if(b<0)<br>
+{<br>
+System.out.println("The number is:"+a+b+"i");<br>
+} <br>
+}<br>
+public void add(int c,int d,int e,int f)
+{<br>
+int h=c+e;<br>
+int g=d+f;<br>
+if(d>f && f>0 && d>0)<br>
+{<br>
+System.out.println("The sum of two numbers is"+h+"+"+g+"i");<br>
+}<br>
+else if(d<f && f>0 && d>0)<br>
+{<br>
+System.out.println("The sum of two numbers is"+h+"+"+g+"i");<br>
+}<br>
+else<br>
+System.out.println("The sum of two numbers is"+h+g+"i");<br>
+}<br>
+public void sub(int c,int d,int e,int f)<br>
+{<br>
+int h=c-e;<br>
+int g=d-f;<br>
+if(d>f)<br>
+{<br>
+System.out.println("The difference is"+h+"+"+g+"i");<br>
+}<br>
+else<br>
+{<br>
+System.out.println("The difference is"+h+g+"i");<br>
+}<br>
+}<br>
+}<br>
+public class DemoComplex<br>
+{<br>
+public static void main(String[] args)<br>
+{<br>
+Scanner inp=new Scanner(System.in);<br>
+System.out.println("Enter the real and imaginary part of first number:");<br>
+int n=inp.nextInt();<br>
+int m=inp.nextInt();<br>
+System.out.println("Enter the real and imaginary part of second number:");<br>
+int p=inp.nextInt();<br>
+int q=inp.nextInt();<br>
+Complex o1=new Complex(n,m);<br>
+Complex o2=new Complex(p,q);<br>
+Complex o3=new Complex();<br>
+o1.display();<br>
+o2.display(); <br>
+o3.add(n,m,p,q);<br>
+o3.sub(n,m,p,q);<br>
+}<br>
+} 
+				</code>
+			</div>
+			<h2>Output</h2>
+			<br>
+			<p id="code">Enter the real part and imaginary part of number:<br>
+				2<br>
+				3<br>
+				Enter the real part and imaginary part of number:<br>
+				3<br>
+				4<br>
+				The number is 2+3i<br>
+				The number is 3+4i<br>
+				The sum is 5+8i<br>
+				The difference is -1-i<br>
+			</p>
+		</div>
+	</div>
+	<div class="jumbotron text-center" style="margin-bottom:0" id="footer">
+		<p>CodeWing.in</p>
+		<p>Made with <img src="lovelogo.png" height="25" width="25"> for programmers</p>
+		<p>Contact me at lalithpunepalli@gmail.com</p>
+		<p>Follow me @</p>
+		<a href="https://www.instagram.com/iamlalith_reddy/" target="-blank"><img src="instagram logo.jpg" height="50" width="50" class="e"></a>
+		<a href="https://linkedin.com/in/lalith-reddy-605480167" target="-blank"><img src="linkedinlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://twitter.com/iamlalithreddy" target="-blank"><img src="twitterlogo.png" height="50" width="50" class="e"></a>
+		<a href="https://www.facebook.com/nanipunepalli" target="-blank"><img src="facebooklogo.png" height="50" width="50" class="e"></a>
+	</div>
+</body>
+</html>
